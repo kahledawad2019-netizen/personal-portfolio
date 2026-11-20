@@ -85,14 +85,110 @@
       </div>
     </section>
 
+
     <section class="section work-section" id="work" aria-labelledby="work-title">
       <div class="section-heading">
         <h2 id="work-title">Selected work</h2>
         <a class="text-link" href="https://github.com/kahledawad2019-netizen" target="_blank" rel="noopener noreferrer">All repositories<svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"></use></svg><span class="sr-only"> (opens in a new tab)</span></a>
       </div>
+      <p class="work-intro">Real projects across applied AI, analytics, and responsible machine learning — from financial-risk review to private, local data copilots.</p>
+
+      <div class="featured-grid" aria-label="Featured AI engineering projects">
+        <article class="featured-project">
+          <div class="featured-visual risk-visual" aria-hidden="true">
+            <div class="visual-window">
+              <div class="visual-window-top">
+                <div class="window-dots"><i></i><i></i><i></i></div>
+                <span>risklens / analytics</span>
+                <span class="window-indicator">● live</span>
+              </div>
+              <div class="risk-window-content">
+                <div class="risk-header"><span>FINANCIAL RISK / OVERVIEW</span><span>PAYSiM</span></div>
+                <div class="risk-metrics">
+                  <div><small>Transactions reconciled</small><strong>6.36M</strong></div>
+                  <div><small>Model evaluation</small><strong>Time-split</strong></div>
+                </div>
+                <div class="risk-trend">
+                  <svg viewBox="0 0 460 86" preserveAspectRatio="none" focusable="false">
+                    <path d="M0 73 H460 M0 42 H460 M0 12 H460" stroke="#36545a" stroke-width="1" stroke-dasharray="4 6" fill="none"/>
+                    <path d="M0 68 L30 61 58 63 87 40 116 50 145 43 174 58 203 36 232 40 261 29 290 43 319 22 348 25 377 12 406 18 434 9 460 15 L460 86 L0 86 Z" fill="#37c4a4" fill-opacity=".10"/>
+                    <polyline points="0,68 30,61 58,63 87,40 116,50 145,43 174,58 203,36 232,40 261,29 290,43 319,22 348,25 377,12 406,18 434,9 460,15" stroke="#59e4c5" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+                  </svg>
+                </div>
+                <div class="risk-foot"><span><i></i> Transaction trends</span><span>Explainability · SHAP</span></div>
+              </div>
+            </div>
+            <span class="visual-note">Illustrative dashboard preview</span>
+          </div>
+          <div class="featured-body">
+            <div class="featured-topline">
+              <span class="featured-number">01 / FEATURED PROJECT</span>
+              <span class="featured-label">Live demo</span>
+            </div>
+            <h3>RiskLens <span>AI</span></h3>
+            <p class="featured-description">An explainable financial-risk review prototype combining transaction analytics, chronological ML evaluation, SHAP explanations, and evidence-backed investigation workflows.</p>
+            <div class="feature-evidence">
+              <span>6.36M PaySim records reconciled</span>
+              <span>Human-in-the-loop review</span>
+            </div>
+            <p class="featured-stack">Python · SQLite · Random Forest · SHAP · LLM tools</p>
+            <div class="featured-actions">
+              <a class="featured-action featured-action--primary" href="https://risklens-c2o.pages.dev/" target="_blank" rel="noopener noreferrer">Explore live dashboard <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"></use></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+            <p class="featured-disclaimer">Demonstration built with synthetic/PaySim data; not a production fraud-detection service.</p>
+          </div>
+        </article>
+
+        <article class="featured-project">
+          <div class="featured-visual rag-visual" aria-hidden="true">
+            <div class="visual-window">
+              <div class="visual-window-top">
+                <div class="window-dots"><i></i><i></i><i></i></div>
+                <span>enterprise copilot / local</span>
+                <span class="window-indicator">● private</span>
+              </div>
+              <div class="rag-window-content">
+                <div class="rag-question"><span class="rag-question-dot">✦</span><span>Which 5 stores have the most orders?</span></div>
+                <div class="rag-pipeline-label">RETRIEVE → GENERATE → VALIDATE</div>
+                <div class="rag-pipeline">
+                  <div><small>Context</small><strong>ChromaDB</strong></div>
+                  <span class="pipeline-arrow">→</span>
+                  <div><small>Local LLM</small><strong>Llama 3.1</strong></div>
+                  <span class="pipeline-arrow">→</span>
+                  <div><small>Read only</small><strong>SQL Server</strong></div>
+                </div>
+                <div class="rag-sql"><span>SQL GUARDRAIL</span><code>SELECT TOP 5 …</code><b>✓</b></div>
+              </div>
+            </div>
+            <span class="visual-note">Illustrative architecture preview</span>
+          </div>
+          <div class="featured-body">
+            <div class="featured-topline">
+              <span class="featured-number">02 / FEATURED PROJECT</span>
+              <span class="featured-label featured-label--local">Local AI</span>
+            </div>
+            <h3>Enterprise <span>RAG Copilot</span></h3>
+            <p class="featured-description">A local, natural-language-to-SQL assistant that retrieves schema and business context, generates T-SQL with Ollama, and applies query guardrails before accessing SQL Server.</p>
+            <div class="feature-evidence">
+              <span>10-table schema tested locally</span>
+              <span>Data stays on-device</span>
+            </div>
+            <p class="featured-stack">Python · Vanna AI · ChromaDB · Ollama · SQL Server</p>
+            <div class="featured-actions">
+              <a class="featured-action featured-action--primary" href="https://github.com/kahledawad2019-netizen/enterprise-rag-copilot" target="_blank" rel="noopener noreferrer">Explore code &amp; architecture <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"></use></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+            <p class="featured-disclaimer">Local prototype; database least-privilege configuration is documented as a remaining hardening step.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="more-work-heading">
+        <h3>More projects</h3>
+        <p>Healthcare AI, computer vision &amp; data analytics</p>
+      </div>
       <div class="project-grid">
         <article class="project-card">
-          <div class="project-type"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#brain-circuit"></use></svg><span>Generative AI</span></div>
+          <div class="project-type"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#brain-circuit"></use></svg><span>Healthcare AI</span></div>
           <h3><a href="https://github.com/kahledawad2019-netizen/pharma-rag" target="_blank" rel="noopener noreferrer">PhARMA RAG<svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"></use></svg><span class="sr-only"> on GitHub (opens in a new tab)</span></a></h3>
           <p>A drug information assistant with hybrid retrieval, source citations, and evidence-based refusal.</p>
           <p class="project-result"><strong>506</strong> FDA drug labels</p>
