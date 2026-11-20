@@ -10,7 +10,7 @@ The QR exports encode this exact URL.
 
 ## Features
 
-- Portrait, professional title, short bio, skills, and three selected projects.
+- Portrait, professional title, short bio, skills, two visual featured AI case studies (RiskLens AI and Enterprise RAG Copilot), and three additional selected projects.
 - CV viewing in a new tab and a separate PDF download link.
 - LinkedIn, GitHub, email, WhatsApp, and phone links.
 - Downloadable vCard 3.0 for importing the contact into a device's address book.
