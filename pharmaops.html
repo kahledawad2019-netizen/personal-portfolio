@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f1">
+  <meta name="description" content="PharmaOps AI: a pharmaceutical manufacturing analytics and predictive-quality research prototype, with auditable data pipelines and honest machine learning evaluation.">
+  <title>PharmaOps AI | Khaled Metwalie</title>
+  <link rel="canonical" href="https://kahledawad2019-netizen.github.io/personal-portfolio/pharmaops.html">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .case-main { max-width: 900px; padding-bottom: 80px; }
+    .case-breadcrumb { padding: 35px 0 26px; font-size: 13px; }
+    .case-breadcrumb a { color: var(--accent); }
+    .case-eyebrow { font-size: 12px; font-weight: 750; color: var(--accent); letter-spacing: .1em; text-transform: uppercase; }
+    .case-main h1 { font-size: clamp(36px, 6.5vw, 65px); letter-spacing: -.055em; line-height: 1.08; margin: 12px 0 15px; }
+    .case-lead { font-size: clamp(15px, 2.6vw, 19px); line-height: 1.7; color: var(--muted); max-width: 750px; }
+    .case-meta { display: flex; flex-wrap: wrap; gap: 8px; margin: 23px 0 32px; }
+    .case-meta span { border: 1px solid var(--border); border-radius: 40px; padding: 8px 12px; font-size: 12px; }
+    .case-stats { display: grid; gap: 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 30px 0; }
+    .case-stat, .case-panel { border: 1px solid var(--border); background: var(--surface); border-radius: 14px; padding: 20px; }
+    .case-stat strong { display: block; font-size: 30px; color: var(--text); line-height: 1.2; }
+    .case-stat span { display: block; font-size: 12px; color: var(--muted); margin-top: 8px; line-height: 1.5; }
+    .case-section { border-top: 1px solid var(--border); padding-top: 32px; margin-top: 40px; }
+    .case-section h2 { font-size: 24px; margin: 0 0 15px; }
+    .case-section p, .case-section li { line-height: 1.75; font-size: 14px; color: var(--muted); }
+    .case-list { padding-left: 22px; }
+    .case-list li { margin-bottom: 10px; }
+    .case-flow { display: grid; gap: 10px; grid-template-columns: 1fr; margin: 19px 0; }
+    .case-flow div { background: var(--soft-accent); border: 1px solid var(--border); border-radius: 12px; padding: 17px; }
+    .case-flow strong { display: block; font-size: 13px; margin-bottom: 4px; }
+    .case-flow small { font-size: 11px; color: var(--muted); line-height: 1.55; }
+    .case-metrics { border-collapse: collapse; width: 100%; margin: 18px 0; }
+    .case-metrics td, .case-metrics th { padding: 12px; text-align: left; border-bottom: 1px solid var(--border); font-size: 13px; line-height: 1.5; }
+    .case-metrics th { font-weight: 700; color: var(--text); background: var(--soft-accent); }
+    .case-alert { border-left: 3px solid var(--accent); padding: 14px 17px; background: var(--soft-accent); border-radius: 0 10px 10px 0; margin: 20px 0; }
+    .case-alert p { margin: 0; color: var(--text); }
+    .case-action { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+    @media (min-width: 650px) {
+      .case-stats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .case-flow { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#case-main">Skip to case study</a>
+  <header class="site-header page-width">
+    <a class="wordmark" href="index.html" aria-label="Khaled Metwalie portfolio home">
+      <span class="monogram" aria-hidden="true">km.</span><span>Khaled Metwalie</span>
+    </a>
+    <nav class="main-nav" aria-label="Navigation">
+      <a href="index.html#work">Projects</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+  <main id="case-main" class="page-width case-main">
+    <div class="case-breadcrumb"><a href="index.html#work">← All projects</a> / PharmaOps AI</div>
+    <p class="case-eyebrow">Pharmaceutical manufacturing · Analytics · Explainable ML</p>
+    <h1>PharmaOps <span style="color:var(--accent)">AI</span></h1>
+    <p class="case-lead">A research-only manufacturing intelligence prototype that brings together traceable batch-level data, process analytics, predictive-quality experiments, and investigation workflows. Designed around auditability rather than inflated model-performance claims.</p>
+    <div class="case-meta"><span>Python</span><span>DuckDB + Parquet</span><span>scikit-learn</span><span>Streamlit + Plotly</span><span>SHAP</span><span>pytest + Ruff</span></div>
+
+    <div class="case-stats" aria-label="Verified project metrics">
+      <div class="case-stat"><strong>1,005</strong><span>Tablet manufacturing batches reconciled</span></div>
+      <div class="case-stat"><strong>4.7M</strong><span>Approximate compression time-series rows</span></div>
+      <div class="case-stat"><strong>2.43</strong><span>Holdout MAE (percentage points)</span></div>
+      <div class="case-stat"><strong>0.041</strong><span>Holdout R² — weak predictive signal</span></div>
+    </div>
+
+    <section class="case-section" aria-labelledby="case-problem">
+      <h2 id="case-problem">Problem and approach</h2>
+      <p>Pharmaceutical production records can be difficult to investigate across raw-material QC, in-process controls, high-frequency compression data, and final tablet-quality measurements. PharmaOps AI explores whether a transparent analytical workflow can help an analyst understand a batch and evaluate early quality estimates.</p>
+      <div class="case-flow">
+        <div><strong>01 · Data governance</strong><small>Verified source download, schema audit, feature timing contract, reconciliation and reproducible builds.</small></div>
+        <div><strong>02 · Analytics and ML</strong><small>Batch-level KPIs, chronological evaluation, baseline comparison, error analysis and SHAP explanations.</small></div>
+        <div><strong>03 · Investigation</strong><small>Batch explorer, model limitations, documented evidence gaps and drift-monitoring views.</small></div>
+      </div>
+    </section>
+
+    <section class="case-section" aria-labelledby="case-delivered">
+      <h2 id="case-delivered">What's implemented</h2>
+      <ul class="case-list">
+        <li><strong>Data pipeline:</strong> MD5-verified source data, audit of 90 source columns, 1,005/1,005 batch reconciliation, process time series in Parquet, and DuckDB analytics with SHA-256 build manifests.</li>
+        <li><strong>Modeling:</strong> temporal split with forward cross-validation, Dummy/Ridge/Random Forest baselines, documented feature availability before final QC, bootstrap confidence intervals and per-product-code error analysis.</li>
+        <li><strong>Interactive product:</strong> Streamlit views for Overview, Batch Explorer, Quality Prediction, and Investigation Workbench with a structured, evidence-linked investigation report.</li>
+        <li><strong>Monitoring:</strong> Population Stability Index (PSI), missingness by data source, batch composition and out-of-sample residual trends, explicitly treated as descriptive indicators.</li>
+        <li><strong>Engineering discipline:</strong> data contracts, a model card, reproducible scripts, unit/integration tests, Ruff checks, runbook, acceptance criteria and independent review logs.</li>
+      </ul>
+    </section>
+
+    <section class="case-section" aria-labelledby="case-results">
+      <h2 id="case-results">Held-out model evaluation</h2>
+      <p>The prediction stage is the end of tablet compression; the target is the final dissolution measurement. The primary model uses 57 features whose availability is documented at that cutoff.</p>
+      <table class="case-metrics">
+        <thead><tr><th>Metric</th><th>Reported result</th></tr></thead>
+        <tbody>
+          <tr><td>Holdout period and size</td><td>November 2020–April 2021 · 211 batches</td></tr>
+          <tr><td>Selected Random Forest MAE</td><td>2.43 percentage points</td></tr>
+          <tr><td>Training-mean baseline MAE</td><td>2.83 percentage points</td></tr>
+          <tr><td>Selected model R² (95% CI)</td><td>0.041 (−0.084 to 0.144)</td></tr>
+        </tbody>
+      </table>
+      <div class="case-alert"><p><strong>Interpretation:</strong> The model modestly improves MAE over the simple baseline but does not meaningfully explain within-product quality variation. Results are not a validated GMP decision tool, QC substitute, production release rule, or root-cause proof.</p></div>
+    </section>
+
+    <section class="case-section" aria-labelledby="case-source">
+      <h2 id="case-source">Data provenance and availability</h2>
+      <p>Built using a public pharmaceutical manufacturing dataset from Žagar &amp; Mihelič (2022), <em>Scientific Data</em> 9:99. <a href="https://doi.org/10.1038/s41597-022-01203-x" target="_blank" rel="noopener noreferrer">Read the original research</a>. The project repository is currently private; code and a walkthrough can be discussed upon request.</p>
+      <div class="case-action">
+        <a class="button button-primary" href="mailto:kahledawad2019@gmail.com?subject=PharmaOps%20AI%20case%20study%20inquiry">Request technical walkthrough</a>
+        <a class="button button-secondary" href="index.html#work">Explore other projects</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer page-width">
+    <span>© 2026 Khaled Metwalie · Research portfolio</span>
+    <a href="https://www.linkedin.com/in/khaled-awad2000/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  </footer>
+</body>
+</html>
