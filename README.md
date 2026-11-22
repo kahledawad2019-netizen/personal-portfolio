@@ -10,7 +10,7 @@ The QR exports encode this exact URL.
 
 ## Features
 
-- Portrait, professional title, short bio, skills, two visual featured AI case studies (RiskLens AI and Enterprise RAG Copilot), and three additional selected projects.
+- Portrait, professional title, short bio, skills, two visual featured AI case studies (RiskLens AI and Enterprise RAG Copilot), plus PharmaOps AI manufacturing analytics and three additional selected projects.
 - CV viewing in a new tab and a separate PDF download link.
 - LinkedIn, GitHub, email, WhatsApp, and phone links.
 - Downloadable vCard 3.0 for importing the contact into a device's address book.
@@ -24,9 +24,10 @@ The QR exports encode this exact URL.
 | Path | Purpose |
 | --- | --- |
 | `index.html` | Profile, skills, projects, contact links, and search/share metadata |
+| `pharmaops.html` | Public, evidence-based PharmaOps AI manufacturing analytics case study |
 | `style.css` | Responsive layout, typography, light and dark themes |
 | `script.js` | Theme controls, sharing, copy fallback, and footer year |
-| `cv.pdf` | Current one-page CV |
+| `cv.pdf` | Updated one-page ATS-style AI & Data Engineer CV (November 2026) |
 | `contact.vcf` | Downloadable contact card |
 | `assets/photo.jpg` | User-supplied portrait |
 | `assets/favicon.png` | Small profile monogram |
@@ -138,7 +139,7 @@ The share action always uses the configured public URL, including when previewin
 
 Prepublication checks completed on 18 November 2026.
 
-- Reviewed the CV and the three public project repository READMEs.
+- Reviewed the CV and the public project repository READMEs. PharmaOps repository is private, so the site provides a public case study instead of an inaccessible repository link.
 - Checked all local file references, navigation targets, and unique HTML IDs.
 - Checked JavaScript syntax.
 - Confirmed that the CV contains PDF data and the vCard has complete CRLF-delimited fields.
@@ -159,3 +160,9 @@ Use the live website to repeat these checks after changes.
 Profile information comes from Khaled Metwalie's supplied CV and confirmed GitHub repositories. The portrait was supplied for this website. Contact information is public on the deployed page and in the downloadable vCard.
 
 Lucide 0.468.0 and Inter 5.2.8 are bundled with their license notices. The website loads its font, icons, portrait, CV, and scripts from the same origin. External services are reached when a visitor follows a contact or project link.
+
+## November 22, 2026 portfolio update
+
+- Added PharmaOps AI to the selected-project cards with a standalone public case study (`pharmaops.html`).
+- Updated the downloadable `cv.pdf` for the Deloitte AI & Data Engineer role, including recent projects and the corrected LinkedIn URL.
+- PharmaOps is explicitly identified as a research-only prototype; the held-out R² and uncertainty remain visible, not presented as validated GMP performance.
